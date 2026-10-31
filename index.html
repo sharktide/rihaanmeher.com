@@ -1,305 +1,221 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f5f0">
-  <meta name="description" content="Rihaan Meher is a student researcher, software developer, and founder of InferencePort AI. Explore research in applied AI, open-source engineering, and science fair work.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Rihaan Meher is a student researcher and software developer at Pine Crest School (Class of 2030). Explore research in artificial intelligence, software projects, open-source contributions, and academic honors.">
   <meta name="author" content="Rihaan Meher">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rihaan Meher — Researcher, Developer & Builder">
-  <meta property="og:description" content="Curiosity, put into code. Research, projects, and the things I'm building.">
+  <meta property="og:title" content="Rihaan Meher | Student Researcher & Software Developer">
+  <meta property="og:description" content="Research, academic achievements, software projects, and open-source contributions.">
   <meta property="og:url" content="https://rihaanmeher.com/">
   <meta name="twitter:card" content="summary">
-  <meta name="color-scheme" content="light">
-  <title>Rihaan Meher — Researcher, Developer & Builder</title>
   <link rel="canonical" href="https://rihaanmeher.com/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Rihaan Meher | Research & Portfolio</title>
   <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"Person",
-      "name":"Rihaan Meher",
-      "url":"https://rihaanmeher.com",
-      "description":"Student researcher, software developer and founder of InferencePort AI",
-      "sameAs":["https://github.com/sharktide","https://huggingface.co/sharktide","https://inferenceport.ai"]
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rihaan Meher",
+      "url": "https://rihaanmeher.com",
+      "description": "Student researcher and software developer at Pine Crest School, Class of 2030",
+      "affiliation": {"@type":"EducationalOrganization","name":"Pine Crest School"},
+      "sameAs": ["https://github.com/sharktide", "https://inferenceport.ai"]
     }
   </script>
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="wordmark" href="#top" aria-label="Rihaan Meher, back to top">
-        <span class="wordmark-icon">r<span>m</span><i>.</i></span>
-        <span class="wordmark-label">RIHAAN MEHER<br><span>PERSONAL PORTFOLIO</span></span>
-      </a>
-      <button class="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">
-        <span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#recognition">Recognition</a>
-        <a href="#open-source">Open source</a>
+    <div class="page header-inner">
+      <a class="site-name" href="#top" aria-label="Rihaan Meher, home">Rihaan Meher<span class="mark">.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#honors">Honors</a>
+        <a href="#software">Software</a>
+        <a href="#experience">Experience</a>
         <a href="#about">About</a>
-        <a class="nav-github" href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
+      <a class="header-external" href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero container" id="top" aria-labelledby="hero-title">
-      <div class="hero-topline">
-        <span class="eyebrow"><span class="live-dot"></span> STUDENT RESEARCHER &amp; SOFTWARE DEVELOPER</span>
-        <span class="topline-index">01 / INTRODUCTION</span>
-      </div>
-      <div class="hero-main">
-        <div class="hero-copy">
-          <p class="hello">Hey, I'm Rihaan Meher <span aria-hidden="true">✳</span></p>
-          <h1 id="hero-title">Curiosity,<br><em>put into</em><br>code<span class="hero-period">.</span></h1>
-          <p class="hero-description">I research real-world problems, build ambitious software, and explore what's possible at the intersection of <strong>science, AI, and engineering.</strong></p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">My GitHub <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="hero-visual" role="img" aria-label="Decorative illustration of intersecting research and software orbits">
-          <div class="visual-grid"></div>
-          <div class="visual-sticker sticker-top"><span class="sticker-star">✳</span><span>ALWAYS<br>EXPERIMENTING</span></div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orbit orbit-three"></div>
-          <div class="orbit-node node-one"></div>
-          <div class="orbit-node node-two"></div>
-          <div class="orbit-node node-three"></div>
-          <div class="visual-core">
-            <span>RESEARCH <i>×</i> CODE</span>
-            <strong>RM<span>↗</span></strong>
-            <small>CLASS OF 2030</small>
-          </div>
-          <div class="visual-sticker sticker-bottom"><span>BUILDING THE<br>FUTURE, TODAY.</span><span class="sticker-arrow">↗</span></div>
-          <span class="visual-coord coord-top">26.1224° N</span>
-          <span class="visual-coord coord-bottom">80.1373° W</span>
+  <main class="page" id="content">
+    <section class="introduction" id="top" aria-labelledby="name-heading">
+      <div class="intro-main">
+        <p class="eyebrow">STUDENT RESEARCHER <span aria-hidden="true">/</span> SOFTWARE DEVELOPER</p>
+        <h1 id="name-heading">Rihaan Meher</h1>
+        <p class="lead">I'm a high school student interested in the intersection of <strong>scientific research, artificial intelligence, and software engineering.</strong></p>
+        <p class="intro-detail">My work ranges from machine-learning research addressing environmental challenges to open-source programming tools and AI infrastructure. I enjoy investigating problems, developing systems, and making ideas practical.</p>
+        <div class="intro-links">
+          <a href="#research">Explore my research <span aria-hidden="true">↓</span></a>
+          <a href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <div class="hero-bottom">
-        <span><span class="tiny-square"></span> Pine Crest School · Class of 2030</span>
-        <span>Research / Engineering / Entrepreneurship</span>
-        <a href="#snapshot" aria-label="Scroll to highlights">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+      <aside class="intro-aside" aria-label="Academic overview">
+        <div class="aside-heading">AT A GLANCE</div>
+        <dl class="facts">
+          <div><dt>School</dt><dd>Pine Crest School</dd></div>
+          <div><dt>Location</dt><dd>Fort Lauderdale, Florida</dd></div>
+          <div><dt>Graduating</dt><dd>Class of 2030</dd></div>
+          <div><dt>Interests</dt><dd>AI / ML, computer science, scientific research</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="content-section" id="research" aria-labelledby="research-heading">
+      <div class="section-header">
+        <div><p class="section-label">01 / RESEARCH</p><h2 id="research-heading">Research projects</h2></div>
+        <p class="section-intro">Applied machine learning with a focus on real-world environmental problems.</p>
+      </div>
+
+      <article class="research-entry">
+        <div class="entry-meta"><span class="entry-index">01</span><span>2025–2026</span><span>Artificial intelligence · Climate</span></div>
+        <div class="entry-body">
+          <h3>AI systems for early prediction of natural disasters</h3>
+          <p class="entry-summary">Designed lightweight, efficient machine-learning systems for early prediction of natural disasters and developed <strong>ClimateStrike AI</strong>, an iOS application bringing the work into an accessible interface.</p>
+          <div class="entry-details">
+            <div><h4>Research focus</h4><p>Efficient predictive modeling and practical applications of AI in natural-disaster awareness.</p></div>
+            <div><h4>Selected results</h4><p>1st place at the Palm Beach County Regional Science &amp; Engineering Fair; 2nd place at the Florida State Science &amp; Engineering Fair; top 10% nationally in the Thermo Fisher Scientific Junior Innovators Challenge.</p></div>
+          </div>
+          <div class="entry-links">
+            <a href="https://github.com/sharktide/ClimateStrike-App" target="_blank" rel="noopener noreferrer">Project repository <span aria-hidden="true">↗</span></a>
+            <a href="https://apps.apple.com/us/app/climatestrike-ai/id6755887336" target="_blank" rel="noopener noreferrer">iOS application <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="research-entry">
+        <div class="entry-meta"><span class="entry-index">02</span><span>2024–2025</span><span>Computer vision · Sustainability</span></div>
+        <div class="entry-body">
+          <h3>Automated recyclable-material sorting</h3>
+          <p class="entry-summary">Developed an AI-based image classification system designed to identify everyday recyclable materials and support more accurate sorting.</p>
+          <div class="entry-details">
+            <div><h4>Research focus</h4><p>Computer vision and classification approaches to recyclable-material recognition.</p></div>
+            <div><h4>Selected results</h4><p>1st place in the Environmental Category at the Florida Junior Academy of Sciences; 2nd place at the Palm Beach County Regional Science &amp; Engineering Fair; NOAA special award.</p></div>
+          </div>
+          <div class="entry-links">
+            <a href="https://github.com/sharktide/recyclebot" target="_blank" rel="noopener noreferrer">Project repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-section" id="honors" aria-labelledby="honors-heading">
+      <div class="section-header">
+        <div><p class="section-label">02 / RECOGNITION</p><h2 id="honors-heading">Honors &amp; awards</h2></div>
+        <p class="section-intro">Selected recognition from science fairs and research competitions.</p>
+      </div>
+      <div class="honors-list">
+        <div class="honor"><span class="honor-year">2025–26</span><div><h3>1st Place</h3><p>Palm Beach County Regional Science &amp; Engineering Fair</p></div><span class="honor-tag">ClimateStrike AI</span></div>
+        <div class="honor"><span class="honor-year">2025–26</span><div><h3>2nd Place</h3><p>Florida State Science &amp; Engineering Fair</p></div><span class="honor-tag">ClimateStrike AI</span></div>
+        <div class="honor"><span class="honor-year">2025–26</span><div><h3>Top 10% Nationally</h3><p>Thermo Fisher Scientific Junior Innovators Challenge</p></div><span class="honor-tag">ClimateStrike AI</span></div>
+        <div class="honor"><span class="honor-year">2025–26</span><div><h3>Special Award</h3><p>Florida Engineering Society</p></div><span class="honor-tag">ClimateStrike AI</span></div>
+        <div class="honor"><span class="honor-year">2024–25</span><div><h3>1st Place · Environmental Category</h3><p>Florida Junior Academy of Sciences</p></div><span class="honor-tag">Recycling research</span></div>
+        <div class="honor"><span class="honor-year">2024–25</span><div><h3>2nd Place</h3><p>Palm Beach County Regional Science &amp; Engineering Fair</p></div><span class="honor-tag">Recycling research</span></div>
+        <div class="honor"><span class="honor-year">2024–25</span><div><h3>3rd Place</h3><p>Cornell Undergraduate Magazine Research Competition</p></div><span class="honor-tag">Recycling research</span></div>
+        <div class="honor"><span class="honor-year">2024–25</span><div><h3>Taking the Pulse of the Planet · Special Award</h3><p>National Oceanic and Atmospheric Administration (NOAA)</p></div><span class="honor-tag">Recycling research</span></div>
       </div>
     </section>
 
-    <section class="snapshot" id="snapshot" aria-label="Highlights">
-      <div class="container metrics">
-        <div class="metric"><strong>70K<span>+</span></strong><span>reStructuredPython<br>downloads</span></div>
-        <div class="metric"><strong>2<span>×</span></strong><span>First-place research<br>recognitions</span></div>
-        <div class="metric"><strong>Top 10<span>%</span></strong><span>Nationally · Thermo Fisher<br>Junior Innovators Challenge</span></div>
-        <div class="metric metric-last"><strong>2030<span>↗</span></strong><span>Pine Crest School<br>graduating class</span></div>
+    <section class="content-section" id="software" aria-labelledby="software-heading">
+      <div class="section-header">
+        <div><p class="section-label">03 / SOFTWARE</p><h2 id="software-heading">Selected software</h2></div>
+        <p class="section-intro">Independent engineering projects developed beyond the classroom.</p>
       </div>
-    </section>
-
-    <section class="section section-work container" id="work" aria-labelledby="work-heading">
-      <div class="section-heading reveal">
-        <div class="section-intro"><span class="section-number">01 / SELECTED WORK</span><span class="section-rule"></span></div>
-        <div class="section-title-row">
-          <div><p class="section-kicker">FROM IDEAS TO IMPACT</p><h2 id="work-heading">Things I've <em>made.</em></h2></div>
-          <p class="section-summary">A mix of scientific research, real products, and tools created to make technology more useful.</p>
-        </div>
-      </div>
-      <div class="filter-bar" role="group" aria-label="Filter selected projects">
-        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All projects <span>04</span></button>
-        <button class="filter-button" type="button" data-filter="research" aria-pressed="false">Research <span>02</span></button>
-        <button class="filter-button" type="button" data-filter="software" aria-pressed="false">Software <span>02</span></button>
-      </div>
-      <div class="project-grid">
-        <article class="project project-wide project-climate reveal" data-category="research">
-          <div class="project-content">
-            <div class="project-meta"><span>01 / RESEARCH</span><span>2025—2026</span></div>
-            <div class="project-main">
-              <span class="project-overline"><span class="overline-dot"></span> AI FOR A SAFER PLANET</span>
-              <h3>ClimateStrike<br><i>AI</i></h3>
-              <p>Lightweight machine-learning systems for early prediction of natural disasters, translated into a free iOS app. Exploring how accessible AI can help people better understand environmental risks.</p>
-              <div class="project-pills"><span>Machine Learning</span><span>Climate Tech</span><span>iOS App</span></div>
-              <div class="project-links">
-                <a href="https://apps.apple.com/us/app/climatestrike-ai/id6755887336" target="_blank" rel="noopener noreferrer">Explore the app <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/sharktide/ClimateStrike-App" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-            <div class="project-footnote">2ND PLACE · FLORIDA STATE SCIENCE &amp; ENGINEERING FAIR</div>
-          </div>
-          <div class="climate-art art-panel" aria-hidden="true">
-            <div class="climate-art-header"><span>CLIMATESTRIKE / PREDICTION SYSTEM</span><span>● ONLINE</span></div>
-            <div class="radar">
-              <div class="radar-ring radar-ring-one"></div><div class="radar-ring radar-ring-two"></div><div class="radar-ring radar-ring-three"></div>
-              <div class="radar-sweep"></div>
-              <div class="radar-cross radar-cross-h"></div><div class="radar-cross radar-cross-v"></div>
-              <span class="radar-ping ping-a"></span><span class="radar-ping ping-b"></span><span class="radar-ping ping-c"></span>
-              <span class="radar-center">✳</span>
-            </div>
-            <div class="radar-stats"><div><span>MODEL COVERAGE</span><strong>07 <small>types</small></strong></div><div><span>APPLICATION</span><strong>iOS <small>↗</small></strong></div></div>
-            <span class="radar-foot">ENVIRONMENTAL INTELLIGENCE — 001</span>
-          </div>
+      <div class="software-list">
+        <article class="software-entry">
+          <div class="software-top"><span>FOUNDER / AI INFRASTRUCTURE</span><span>01</span></div>
+          <h3>InferencePort AI</h3>
+          <p>Founded and built a revenue-generating AI inference software platform supporting local, private, and cloud-based model execution. My work spans software architecture, deployment, and developer-facing infrastructure.</p>
+          <a href="https://inferenceport.ai" target="_blank" rel="noopener noreferrer">inferenceport.ai <span aria-hidden="true">↗</span></a>
         </article>
-
-        <article class="project project-wide project-inference reveal" data-category="software">
-          <div class="project-content">
-            <div class="project-meta"><span>02 / ENTREPRENEURSHIP</span><span>FOUNDER</span></div>
-            <div class="project-main">
-              <span class="project-overline"><span class="overline-dot"></span> BUILDING AI INFRASTRUCTURE</span>
-              <h3>InferencePort<br><i>AI</i></h3>
-              <p>I founded InferencePort AI to make powerful AI models easier to access and deploy. The platform brings cloud inference, local execution, and developer tools into one ecosystem — and has grown into a revenue-generating product.</p>
-              <div class="project-pills"><span>AI Infrastructure</span><span>Cloud</span><span>Founder</span></div>
-              <div class="project-links">
-                <a href="https://inferenceport.ai" target="_blank" rel="noopener noreferrer">Visit InferencePort <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/sharktide/inferenceport-ai" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-            <div class="project-footnote">FROM SIDE PROJECT TO REAL-WORLD PRODUCT</div>
-          </div>
-          <div class="inference-art art-panel" aria-hidden="true">
-            <div class="mock-window">
-              <div class="mock-top"><span class="mock-brand">✳ &nbsp;inferenceport<span>.ai</span></span><span class="mock-window-icons">● &nbsp; ● &nbsp; ●</span></div>
-              <div class="mock-body">
-                <div class="mock-sidebar"><span class="mock-side-active">▦</span><span>◈</span><span>⌁</span><span>⚙</span></div>
-                <div class="mock-workspace">
-                  <div class="mock-workspace-label">UNIFIED AI INFRASTRUCTURE</div>
-                  <div class="mock-workspace-title">One platform.<br>More possibilities.</div>
-                  <div class="mock-models"><span><b>◉</b> TEXT</span><span><b>◈</b> IMAGE</span><span><b>▷</b> VIDEO</span><span><b>♫</b> AUDIO</span></div>
-                  <div class="mock-chart"><span class="mock-chart-line"></span><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                </div>
-              </div>
-              <div class="mock-bottom"><span>BUILD · DEPLOY · SCALE</span><span>→</span></div>
-            </div>
-            <span class="art-label">ILLUSTRATIVE PLATFORM CONCEPT</span>
-          </div>
-        </article>
-
-        <article class="project project-small project-recycle reveal" data-category="research">
-          <div class="small-visual recycle-visual" aria-hidden="true">
-            <span class="small-visual-label">RESEARCH / COMPUTER VISION</span>
-            <div class="recycle-icons"><div class="recycle-object obj-a">▣</div><div class="recycle-object obj-b">◩</div><div class="recycle-object obj-c">◇</div></div>
-            <div class="recycle-flow"><span>IMAGE INPUT</span><span class="flow-line"></span><span>CLASSIFY</span><span class="flow-line"></span><span>RECYCLE</span></div>
-          </div>
-          <div class="small-project-content">
-            <div class="project-meta"><span>03 / RESEARCH</span><span>2024—2025</span></div>
-            <h3>Smarter recycling,<br><em>less waste.</em></h3>
-            <p>A computer-vision classification system designed to recognize everyday recyclable materials and improve sorting accuracy.</p>
-            <div class="small-project-bottom"><span>1ST PLACE · FLORIDA JUNIOR ACADEMY OF SCIENCES</span><a href="https://github.com/sharktide/recyclebot" target="_blank" rel="noopener noreferrer" aria-label="View recycling research on GitHub">↗</a></div>
-          </div>
-        </article>
-
-        <article class="project project-small project-repy reveal" data-category="software">
-          <div class="small-visual repy-visual" aria-hidden="true">
-            <div class="code-window"><span class="code-comment"># Python, with room to experiment.</span><span><b>include</b> <i>"utils.repy"</i></span><span><b>if</b> ready {</span><span>&nbsp;&nbsp;<em>build_something</em>()</span><span>}</span><span class="code-cursor">_</span></div>
-            <div class="code-stamp">70K+ DOWNLOADS ↗</div>
-          </div>
-          <div class="small-project-content">
-            <div class="project-meta"><span>04 / LANGUAGE TOOLING</span><span>OPEN SOURCE</span></div>
-            <h3>reStructured<span>Python</span><em>.</em></h3>
-            <p>A Python superset I created with additional syntax and developer conveniences, from optional curly braces to includes.</p>
-            <div class="small-project-bottom"><span>70,000+ PACKAGE DOWNLOADS</span><a href="https://github.com/sharktide/restructuredpython" target="_blank" rel="noopener noreferrer" aria-label="View reStructuredPython on GitHub">↗</a></div>
-          </div>
+        <article class="software-entry">
+          <div class="software-top"><span>CREATOR / PROGRAMMING LANGUAGES</span><span>02</span></div>
+          <h3>reStructuredPython</h3>
+          <p>Created a Python superset extending the language with additional syntax and developer-oriented features. The project has received over <strong>70,000 downloads</strong>.</p>
+          <a href="https://github.com/sharktide/restructuredpython" target="_blank" rel="noopener noreferrer">View source code <span aria-hidden="true">↗</span></a>
         </article>
       </div>
-      <div class="work-footer reveal"><p>More experiments, contributions, and works in progress live on my GitHub.</p><a class="line-button" href="https://github.com/sharktide?tab=repositories" target="_blank" rel="noopener noreferrer">Browse repositories <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="section awards-section" id="recognition" aria-labelledby="awards-heading">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="section-intro"><span class="section-number">02 / RECOGNITION</span><span class="section-rule"></span></div>
-          <div class="section-title-row"><div><p class="section-kicker">THE WORK BEHIND THE RESULTS</p><h2 id="awards-heading">A little <em>recognition.</em></h2></div><p class="section-summary">I'm especially drawn to research that can move beyond the lab and make a difference.</p></div>
-        </div>
-        <div class="awards-layout">
-          <div class="awards-feature reveal">
-            <span class="award-feature-eyebrow">SCIENCE &amp; ENGINEERING</span>
-            <div class="award-asterisk" aria-hidden="true">✳</div>
-            <h3>Ask better<br>questions.<br><em>Build better<br>answers.</em></h3>
-            <p>My projects have been recognized at regional, state, and national levels.</p>
-            <span class="award-feature-foot">2024 — 2026 / SELECTED HONORS</span>
-          </div>
-          <div class="award-list">
-            <div class="award-group reveal">
-              <div class="award-group-head"><span>2025 / 2026</span><span>CLIMATESTRIKE AI</span></div>
-              <div class="award-item"><span class="award-placing">01</span><div><strong>1st Place</strong><span>Palm Beach County Regional Science &amp; Engineering Fair</span></div><span class="award-symbol">↗</span></div>
-              <div class="award-item"><span class="award-placing">02</span><div><strong>2nd Place</strong><span>Florida State Science &amp; Engineering Fair</span></div><span class="award-symbol">↗</span></div>
-              <div class="award-item"><span class="award-placing">✳</span><div><strong>Top 10% Nationally</strong><span>Thermo Fisher Scientific Junior Innovators Challenge</span></div><span class="award-symbol">↗</span></div>
-              <div class="award-item"><span class="award-placing">✳</span><div><strong>Special Award</strong><span>Florida Engineering Society</span></div><span class="award-symbol">↗</span></div>
-            </div>
-            <div class="award-group reveal">
-              <div class="award-group-head"><span>2024 / 2025</span><span>RECYCLABLE MATERIAL SORTING</span></div>
-              <div class="award-item"><span class="award-placing">01</span><div><strong>1st Place · Environmental Category</strong><span>Florida Junior Academy of Sciences</span></div><span class="award-symbol">↗</span></div>
-              <div class="award-item"><span class="award-placing">02</span><div><strong>2nd Place</strong><span>Palm Beach County Regional Science &amp; Engineering Fair</span></div><span class="award-symbol">↗</span></div>
-              <div class="award-item"><span class="award-placing">03</span><div><strong>3rd Place</strong><span>Cornell Undergraduate Magazine Research Competition</span></div><span class="award-symbol">↗</span></div>
-              <div class="award-item"><span class="award-placing">✳</span><div><strong>Taking the Pulse of the Planet Award</strong><span>National Oceanic and Atmospheric Administration (NOAA)</span></div><span class="award-symbol">↗</span></div>
-            </div>
+    <section class="content-section" id="experience" aria-labelledby="experience-heading">
+      <div class="section-header">
+        <div><p class="section-label">04 / EXPERIENCE</p><h2 id="experience-heading">Open source &amp; technical work</h2></div>
+      </div>
+      <div class="experience-entry">
+        <div class="experience-meta">OPEN-SOURCE CONTRIBUTIONS</div>
+        <div class="experience-body">
+          <h3>Contributing to developer tools and machine learning</h3>
+          <p>I've contributed to open-source projects including CPython, TensorFlow, JAX, GitHub Linguist, and Pollinations. I've also created TextMate syntax-highlighting grammars used by GitHub.</p>
+          <div class="project-links">
+            <a href="https://github.com/python/cpython" target="_blank" rel="noopener noreferrer">CPython ↗</a>
+            <a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">TensorFlow ↗</a>
+            <a href="https://github.com/jax-ml/jax" target="_blank" rel="noopener noreferrer">JAX ↗</a>
+            <a href="https://github.com/github-linguist/linguist" target="_blank" rel="noopener noreferrer">GitHub Linguist ↗</a>
+            <a href="https://github.com/pollinations/pollinations" target="_blank" rel="noopener noreferrer">Pollinations ↗</a>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="section open-source-section" id="open-source" aria-labelledby="oss-heading">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="section-intro"><span class="section-number">03 / OPEN SOURCE</span><span class="section-rule"></span></div>
-          <div class="section-title-row"><div><p class="section-kicker">BUILDING IN THE OPEN</p><h2 id="oss-heading">Good work is <em>shared.</em></h2></div><p class="section-summary">I contribute to projects and tools that developers around the world use every day.</p></div>
+      <div class="experience-entry">
+        <div class="experience-meta">SECURITY RESEARCH</div>
+        <div class="experience-body">
+          <h3>Independent security research</h3>
+          <p>Conduct vulnerability research and security testing through Bugcrowd, with an interest in identifying and improving software security issues.</p>
+          <div class="project-links"><a href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div>
         </div>
-        <div class="oss-grid reveal">
-          <a class="oss-item" href="https://github.com/python/cpython" target="_blank" rel="noopener noreferrer"><span class="oss-icon">Py</span><span><strong>CPython</strong><small>Python language &amp; runtime</small></span><b aria-hidden="true">↗</b></a>
-          <a class="oss-item" href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer"><span class="oss-icon oss-orange">Tf</span><span><strong>TensorFlow</strong><small>Machine learning framework</small></span><b aria-hidden="true">↗</b></a>
-          <a class="oss-item" href="https://github.com/jax-ml/jax" target="_blank" rel="noopener noreferrer"><span class="oss-icon oss-purple">Jx</span><span><strong>JAX</strong><small>Numerical &amp; ML computing</small></span><b aria-hidden="true">↗</b></a>
-          <a class="oss-item" href="https://github.com/github-linguist/linguist" target="_blank" rel="noopener noreferrer"><span class="oss-icon oss-dark">Gh</span><span><strong>GitHub Linguist</strong><small>Language detection &amp; syntax</small></span><b aria-hidden="true">↗</b></a>
-          <a class="oss-item" href="https://github.com/pollinations/pollinations" target="_blank" rel="noopener noreferrer"><span class="oss-icon oss-pink">✳</span><span><strong>Pollinations</strong><small>Open-source generative AI</small></span><b aria-hidden="true">↗</b></a>
-          <a class="oss-item" href="https://github.com/sharktide/livescript-vscode" target="_blank" rel="noopener noreferrer"><span class="oss-icon oss-green">&lt;/&gt;</span><span><strong>Syntax tooling</strong><small>TextMate grammars &amp; editors</small></span><b aria-hidden="true">↗</b></a>
-        </div>
-        <div class="oss-footer reveal">
-          <div class="oss-footer-icon" aria-hidden="true">⌘</div>
-          <div><strong>Engineering with a security mindset.</strong><p>I also conduct independent vulnerability research and security testing through Bugcrowd.</p></div>
-          <a href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">Follow the work <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="experience-entry">
+        <div class="experience-meta">TECHNICAL SKILLS</div>
+        <div class="experience-body">
+          <h3>Tools and technologies</h3>
+          <dl class="skills-list">
+            <div><dt>Languages</dt><dd>Python, C, C++, C#, JavaScript, TypeScript, Rust, HTML/CSS, PowerShell, LiveScript, reStructuredPython</dd></div>
+            <div><dt>AI &amp; scientific computing</dt><dd>TensorFlow, PyTorch, JAX/Flax, NumPy, Pandas, Gradio</dd></div>
+            <div><dt>Development</dt><dd>FastAPI, Django, Flask, Express, PostgreSQL, Uvicorn, PyBind, GitHub Actions, Bazel/Starlark, MSBuild</dd></div>
+            <div><dt>Cloud &amp; platforms</dt><dd>AWS, Azure, Google Cloud, Oracle Cloud, Cloudflare, Hugging Face, Linux</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section class="section about-section container" id="about" aria-labelledby="about-heading">
-      <div class="section-heading reveal">
-        <div class="section-intro"><span class="section-number">04 / THE PERSON BEHIND THE PROJECTS</span><span class="section-rule"></span></div>
-        <div class="section-title-row"><div><p class="section-kicker">A LITTLE ABOUT ME</p><h2 id="about-heading">Beyond the <em>screen.</em></h2></div></div>
+    <section class="content-section about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-header">
+        <div><p class="section-label">05 / BACKGROUND</p><h2 id="about-heading">Education &amp; activities</h2></div>
       </div>
-      <div class="about-layout">
-        <div class="about-story reveal">
-          <p class="about-lead">I'm a high school student who loves <em>figuring out how things work</em> — and then trying to make them work better.</p>
-          <p>At Pine Crest School in Fort Lauderdale, I'm pursuing advanced math and science coursework while exploring machine learning, open-source software, and entrepreneurship. I enjoy the process of turning questions into experiments and experiments into useful tools.</p>
-          <div class="education-card"><div class="education-symbol">P<span>✳</span></div><div><span>EDUCATION</span><strong>Pine Crest School</strong><p>Fort Lauderdale, Florida · Class of 2030</p><small>Academic Honor Roll throughout middle school · 1st Place Computer Science, Middle School Graduation Award</small></div></div>
-          <div class="beyond-card"><span>OUTSIDE THE LAB</span><div><span>⛳ &nbsp; Golf</span><span>🎾 &nbsp; Tennis</span><span>🥁 &nbsp; Drums</span><span>✈ &nbsp; Travel (15+ countries)</span><span>⚙ &nbsp; Robotics &amp; math competitions</span></div></div>
+      <div class="about-grid">
+        <div class="about-block">
+          <h3>Education</h3>
+          <p class="about-title">Pine Crest School <span>— Fort Lauderdale, FL</span></p>
+          <p>Current 9th grade student · Expected graduation 2030</p>
+          <ul>
+            <li>Advanced mathematics and science coursework</li>
+            <li>Academic Honor Roll every semester throughout middle school</li>
+            <li>1st Place Computer Science — Middle School Graduation Award</li>
+          </ul>
         </div>
-        <div class="skills-panel reveal">
-          <div class="skills-header"><span>THE TOOLKIT</span><span>ALWAYS LEARNING ↗</span></div>
-          <div class="skill-group"><h3>01 / Languages</h3><p>Python · C · C++ · C# · JavaScript · TypeScript · Rust · HTML · CSS · PowerShell · LiveScript · reStructuredPython</p></div>
-          <div class="skill-group"><h3>02 / AI &amp; Data</h3><p>TensorFlow · PyTorch · JAX / Flax · NumPy · Pandas · Hugging Face · Gradio</p></div>
-          <div class="skill-group"><h3>03 / Web &amp; Backend</h3><p>FastAPI · Django · Flask · Uvicorn · Express · PostgreSQL · PyBind</p></div>
-          <div class="skill-group"><h3>04 / Cloud &amp; Tooling</h3><p>AWS · Azure · Google Cloud · Oracle Cloud · Cloudflare · Linux · GitHub Actions · Bazel / Starlark · MSBuild</p></div>
-          <div class="skills-bottom"><span>LEARN / MAKE / BREAK / REPEAT</span><span>✳</span></div>
+        <div class="about-block">
+          <h3>Beyond academics</h3>
+          <p>Active participant in robotics and mathematics competitions.</p>
+          <p>Outside research and programming, I enjoy golf, tennis, playing the drums, and traveling. I've visited more than 15 countries.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="closing-section" id="contact" aria-labelledby="closing-heading">
-      <div class="container closing-inner">
-        <div class="closing-top"><span>05 / WHAT'S NEXT?</span><span>LET'S MAKE SOMETHING USEFUL.</span></div>
-        <div class="closing-content">
-          <p>Have an idea worth exploring?</p>
-          <h2 id="closing-heading">Let's build<br><em>something.</em><span>↗</span></h2>
-          <div class="closing-actions"><a class="button button-light" href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a><a href="https://huggingface.co/sharktide" target="_blank" rel="noopener noreferrer">Hugging Face <span aria-hidden="true">↗</span></a></div>
-        </div>
-        <footer class="footer"><a class="footer-brand" href="#top" aria-label="Back to top">rm.</a><span>© <span id="current-year">2026</span> RIHAAN MEHER</span><span>MADE WITH CURIOSITY &amp; A LOT OF CODE.</span><a href="#top">BACK TO TOP ↑</a></footer>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="page footer-inner">
+      <div><strong>Rihaan Meher</strong><span>Pine Crest School · Class of 2030</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/sharktide" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://inferenceport.ai" target="_blank" rel="noopener noreferrer">InferencePort AI ↗</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

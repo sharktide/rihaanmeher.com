@@ -1,40 +1,44 @@
-# Rihaan Meher — Portfolio
+# Rihaan Meher — Academic Portfolio
 
-A responsive, accessible, single-page portfolio for **Rihaan Meher**, student researcher, software developer, and founder of [InferencePort AI](https://inferenceport.ai).
+A minimalist personal portfolio for **Rihaan Meher**, high school student researcher and software developer (Pine Crest School, Class of 2030).
 
-## What's inside
+The site is intended as a straightforward, readable overview of research, awards, software projects, technical experience, and academic interests.
 
-- Research and software projects: ClimateStrike AI, InferencePort AI, recyclable-material sorting, and reStructuredPython
-- Selected science-fair honors and other recognition
-- Open-source contributions, background, and technical skills
-- Interactive project filters, responsive mobile navigation, and subtle motion with reduced-motion support
-- SEO metadata and structured Person data
+## Site contents
 
-## Local development
+- **Research** — ClimateStrike AI and AI-assisted recyclable-material sorting, with project links and notable recognition.
+- **Honors** — regional, state, and national research competition results from the resume.
+- **Software** — InferencePort AI and reStructuredPython.
+- **Experience** — open-source contributions, security research, and technical skills.
+- **About** — education, school honors, and extracurricular interests.
 
-No dependencies, build step, or framework required. Open `index.html` in a browser, or run a static server from the repository root:
+Content is based on the portfolio owner's resume and linked public projects. Awards and download counts reflect the details supplied by the owner.
+
+## Design
+
+- Plain HTML and CSS, with no JavaScript or build process.
+- System font stack; no Google Fonts or external design dependencies.
+- Responsive, accessible layout with semantic headings, keyboard-focus indicators, and reduced-motion support.
+- No decorative mockups or stock photography.
+
+## Local preview
+
+From the repository root:
 
 ```sh
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Open `http://localhost:8000`.
 
 ## Deployment
 
-The website is designed for **GitHub Pages** with the `main` branch as its source.
+The existing `CNAME` file points to `rihaanmeher.com`. The site can be served directly from the root of `main` via GitHub Pages (**Settings → Pages → Deploy from a branch → main → /(root)**). Ensure the custom domain's DNS is configured according to [GitHub Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site). GitHub Pages settings, DNS and HTTPS are separate from a repository commit.
 
-1. Open **Settings → Pages** for this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/(root)`.
-3. The `CNAME` file specifies `rihaanmeher.com`. To use that domain, configure its DNS records per [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) and verify the domain within GitHub as appropriate.
-4. Enable **Enforce HTTPS** once the certificate is ready.
+## Maintenance
 
-Publishing and DNS configuration are GitHub account/domain settings and are not automatically activated by committing the site. You can also deploy this site to any static web host.
+- `index.html` — text, sections, links, and metadata
+- `styles.css` — all presentation and responsive rules
+- `favicon.svg` — small typographic icon
 
-## Editing
-
-Update the copy in `index.html`, styles in `styles.css`, and small interactive behaviors in `script.js`. The featured project visuals are **original, illustrative CSS compositions** rather than screenshots of the underlying products.
-
-External links and project names are based on the resume supplied by Rihaan and associated publicly accessible project pages. Award descriptions and download figures are provided by the portfolio owner.
-
-Copyright and license: see [LICENSE](LICENSE).
+The original repository license is retained in `LICENSE`.
