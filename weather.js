@@ -109,14 +109,14 @@
     if(weight<.012)return;
     const color=themeDark?"155,194,217":"73,131,176";
     ctx.save();
-    ctx.lineWidth=1.45;
-    ctx.strokeStyle="rgba("+color+","+(weight*(themeDark?.5:.45)).toFixed(3)+")";
+    ctx.lineWidth=1.85;
+    ctx.strokeStyle="rgba("+color+","+(weight*(themeDark?.65:.66)).toFixed(3)+")";
     ctx.beginPath();
-    for(let i=0;i<110;i++){
+    for(let i=0;i<160;i++){
       const side=i%2===0?-1:1;
       const x=(side<0?width*.04:width*.96)+(rand(i*7.2+2)-.5)*width*.27;
       const y=(rand(i*12.34+4)*height+scroll*.51+clock*.09*(.45+rand(i)) )%(height+90)-45;
-      const length=13+rand(i*8.33+6)*35;
+      const length=18+rand(i*8.33+6)*40;
       ctx.moveTo(x,y);ctx.lineTo(x-3-length*.16,y+length);
     }
     ctx.stroke();ctx.restore();
@@ -146,11 +146,11 @@
   function electricPass(weight) {
     if(weight<.02)return;
     // No strobing / random flashes: a slowly breathing conductor glow.
-    const breath=.72+.28*Math.sin(clock*.00075);
+    const breath=.84+.16*Math.sin(clock*.00055);
     const power=clamp(weight*breath);
     ctx.save();
     for(const side of [-1,1]){
-      const x=side<0?width*.13:width*.87;
+      const x=side<0?width*.105:width*.895;
       const y=height*.20+Math.sin(clock*.0002+side)*42;
       ctx.translate(x,y);
       ctx.scale(side,1);
@@ -160,9 +160,9 @@
       ctx.lineTo(-24,166);ctx.lineTo(2,136);ctx.lineTo(-3,100);
       ctx.lineTo(26,57);
       ctx.strokeStyle=themeDark?"rgba(255,221,132,.82)":"rgba(188,139,45,.72)";
-      ctx.globalAlpha=power*.8;
-      ctx.shadowBlur=25;ctx.shadowColor="#f6d58e";
-      ctx.lineWidth=1.7;ctx.stroke();
+      ctx.globalAlpha=power*.98;
+      ctx.shadowBlur=32;ctx.shadowColor="#f6d58e";
+      ctx.lineWidth=2.65;ctx.stroke();
       ctx.shadowBlur=0;
       ctx.setTransform(scale,0,0,scale,0,0);
     }
@@ -178,9 +178,9 @@
     const g=ctx.createLinearGradient(0,0,width,0);
     g.addColorStop(0,"rgba(0,0,0,1)");
     g.addColorStop(clamp(inner*.52,.02,.22),"rgba(0,0,0,.86)");
-    g.addColorStop(inner,"rgba(0,0,0,.18)");
+    g.addColorStop(inner,"rgba(0,0,0,.28)");
     g.addColorStop(.5,"rgba(0,0,0,0)");
-    g.addColorStop(right,"rgba(0,0,0,.18)");
+    g.addColorStop(right,"rgba(0,0,0,.28)");
     g.addColorStop(1-clamp(inner*.52,.02,.22),"rgba(0,0,0,.86)");
     g.addColorStop(1,"rgba(0,0,0,1)");
     ctx.globalCompositeOperation="destination-in";
@@ -196,9 +196,9 @@
     const honors=influence("honors",1550);
     const skills=influence("skills",1500);
     cloudPass();
-    rainPass(Math.max(projects*.9,experience*.55,skills*.4,.30));
+    rainPass(Math.max(projects*1.0,experience*.75,skills*.6,.58));
     waterPass(Math.max(projects*.7,skills*.5,.15));
-    electricPass(Math.max(experience*.55,honors*.95,.28));
+    electricPass(Math.max(experience*.8,honors*1.1,.62));
     softenCenter();
     // Choose the closest active product, not whichever section appears first.
     const nearest=[["rain",projects],["charged",experience],
