@@ -10,7 +10,7 @@
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 96px; }
-body { margin: 0; background: #fff; color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: transparent; color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
 ::selection { background: #dce6ef; color: var(--text); }
@@ -188,4 +188,26 @@ h1, h2, h3, h4 { line-height: 1.23; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .site-nav a, .header-external { transition: none; }
+}
+
+/* Scroll-linked cloud, rain and lightning layer, adapted from InferencePort-Web.
+   Visible in the margins, behind the portfolio content, without blocking links. */
+body { isolation: isolate; }
+.portfolio-weather {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+.portfolio-weather.is-active { visibility: visible; opacity: 1; }
+.portfolio-weather-canvas { display: block; width: 100%; height: 100%; }
+@media (max-width: 1023px), (prefers-reduced-motion: reduce) {
+  .portfolio-weather { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-weather { transition: none; }
 }
