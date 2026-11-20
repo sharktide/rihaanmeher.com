@@ -106,6 +106,15 @@ h1, h2, h3, h4 { line-height: 1.23; }
 .skills-list > div { display: grid; grid-template-columns: 153px 1fr; gap: 18px; padding: 12px 0; border-top: 1px solid var(--border); }
 .skills-list dt { font-weight: 620; font-size: 13px; }
 .skills-list dd { margin: 0; font-size: 13px; line-height: 1.7; color: var(--muted); }
+/* Keep the skills label level with the first row, not above the list. */
+.skills-entry { align-items: start; }
+.skills-entry .experience-meta { padding-top: 1px; }
+.skills-entry .skills-list { margin-top: 0; }
+.skills-entry .skills-list > div { grid-template-columns: 205px minmax(0, 1fr); gap: 24px; padding: 15px 0; align-items: baseline; }
+.skills-entry .skills-list > div:first-child { border-top: 0; padding-top: 0; }
+.skills-entry .skills-list dt { font-size: 15px; line-height: 1.65; }
+.skills-entry .skills-list dd { font-size: 15px; line-height: 1.7; }
+
 
 .about-section { padding-bottom: 110px; }
 .about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 60px; border-top: 1px solid var(--border); padding-top: 29px; }
@@ -143,6 +152,8 @@ h1, h2, h3, h4 { line-height: 1.23; }
   .section-header { align-items: start; flex-direction: column; gap: 10px; }
   .section-intro { max-width: 550px; }
   .research-entry, .experience-entry { grid-template-columns: 1fr; gap: 19px; }
+  .skills-entry { grid-template-columns: 1fr; gap: 12px; }
+  .skills-entry .skills-list > div:first-child { border-top: 1px solid var(--border); padding-top: 15px; }
   .entry-meta { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 8px 15px; }
   .entry-index { margin: 0; }
   .experience-meta { margin: 0; }
@@ -169,7 +180,7 @@ h1, h2, h3, h4 { line-height: 1.23; }
   .software-entry { min-height: 0; padding: 25px; }
   .project-card-media { height: 150px; padding: 10px; }
   .software-entry h3 { margin: 18px 0 12px; }
-  .skills-list > div { grid-template-columns: 1fr; gap: 2px; }
+  .skills-entry .skills-list > div { grid-template-columns: 1fr; gap: 3px; }
   .about-grid { grid-template-columns: 1fr; gap: 31px; }
   .about-section { padding-bottom: 75px; }
   .footer-inner { flex-direction: column; gap: 20px; }
