@@ -74,6 +74,7 @@ h1, h2, h3, h4 { line-height: 1.23; }
 .honor p { color: var(--muted); margin: 0; font-size: 13px; }
 .honor-tag { color: var(--soft); font-size: 12px; text-align: right; }
 
+.projects-section .software-list { margin-top: 30px; }
 .software-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
 .software-entry { border: 1px solid var(--border); padding: 27px 29px 29px; display: flex; flex-direction: column; align-items: start; min-height: 289px; }
 .software-top { width: 100%; display: flex; justify-content: space-between; color: var(--soft); gap: 12px; }
